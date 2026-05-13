@@ -14,5 +14,10 @@ class User(base):
 class Vendor(base):
     __tablename__="vendors"
     id:Mapped[int]=mapped_column(primary_key=True)
+    name:Mapped[str]=mapped_column()
+    location:Mapped[str]=mapped_column()
 class Product(base):
-    pass
+    __tablename__="products"
+    id:Mapped[int]=mapped_column(primary_key=True)
+    name:Mapped[str]=mapped_column()
+    vendor_id:Mapped[int]
