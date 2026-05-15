@@ -200,7 +200,7 @@ def vendor_menu(vendor):
 
         elif choice == "0":
             break
-
+            
 
 # --- Main ---
 def main():
